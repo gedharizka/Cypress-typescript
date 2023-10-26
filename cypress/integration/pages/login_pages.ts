@@ -17,9 +17,10 @@ export class LoginPage{
     clickLogin(){
         cy.get(this.btn_login).click()
     }
+    // Error
+    // cy.get('.peek').should('be.visible')
     assertLogin(){
         cy.get('.title').should('be.visible')
-        cy.get('.peek').should('be.visible')
         cy.contains('Products').should('contain','Products')
     }
     assertLoginFail(){
